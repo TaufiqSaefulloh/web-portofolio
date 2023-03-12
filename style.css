@@ -1,0 +1,21 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 4px rgb(250, 75, 0);
+}
+.navbar-brand{
+    color: rgb(255, 255, 255);
+    font-family: sans;
+}
+.navbar-brand:hover{
+    color: rgb(242, 65, 11);
+}
+.nav-link{
+    color: white;
+    font-family: fantasy;
+}
+.nav-link:hover{
+    color: rgb(250, 75, 0);
+}
+.navbar-toggler{
+    background-color: rgb(255, 123, 0);
+}
