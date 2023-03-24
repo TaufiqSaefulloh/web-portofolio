@@ -23,6 +23,9 @@ body{
 .nav-link:hover{
     color: rgb(250, 75, 0);
 }
+.nav-link:active{
+    color: red;
+}
 .navbar-toggler{
     background-color: rgb(255, 123, 0);
 }
