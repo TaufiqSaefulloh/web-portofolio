@@ -21,16 +21,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -39,8 +39,8 @@
 
 <!-- section  Home-->
 <section id="home" class="home container">
-    <div class="row d-flex align-item-center">
-        <div class="col-8 mt-5">
+    <div class="row d-flex align-item-center flex-md-row flex-column-reverse">
+        <div class="col-md-8 col-12 mt-5 hom">
             <h3 class="semi-bold">Hi! I am</h3>
             <h1 class="bold">Taufiq Sae</h1>
             <p>I am Software Engineer Based In Indonesia</p>
@@ -50,14 +50,14 @@
               </svg>
             </a>
         </div>
-        <div class="col-4">
+        <div class="col 12 col-md-4 justify-content-md-end justify-content-center">
             <img class="mypicture" src="images/myy.jpeg" alt="potrait">
         </div>
     </div>
-    <div class="arrow  d-flex align-items-center flex-column mt-5">
-        <a class="text-decoration-none text-danger" href="#about">More Info</a>
+    <a href="#about" class="arrow text-decoration-none d-flex align-items-center flex-column mt-5">
+        <div class=" text-danger">More Info</div>
         <img id="arrow" class="mt-2" src="images/arrow.svg" alt="">
-    </div>
+    </a>
 </section>
 
 <!-- section about  -->
@@ -97,9 +97,65 @@
     </div>
 </section>
 
+<!-- work  -->
+<section id="work" class="work container">
+    <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-md-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at aspernatur, similique repellendus cum obcaecati necessitatibus, ullam odio minima iure minus inventore, nobis hic dolorum sed. Debitis voluptas quo, veniam repellat est odit assumenda, ea beatae facilis aliquam maxime ab magnam. Provident iste esse officiis deserunt laborum repellendus, architecto placeat?</p>
+        </div>
+        <div class="col-12 col-md-6 work-image">
+            <div id="work-1" class="work-image-item">    
+                <img src="images/work-1.png" alt="work 1" >
+            </div>
+            <div id="work-2" class="work-image-item">    
+                <img src="images/work-2.png" alt="work 2" >
+            </div>
+            <div id="work-3" class="work-image-item">    
+                <img src="images/work-3.png" alt="work 3" >
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
+<!-- contact  -->
+<section class="contact container" id="contact">
+    <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-lg-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur quis, magnam deleniti optio doloremque dolorum velit. Ipsum doloremque aperiam suscipit magni velit, dignissimos provident laboriosam distinctio maiores modi tempore quod eaque nobis architecto dicta, ad dolore! Ut eveniet eligendi nesciunt error cumque vero velit quae! Possimus earum natus eligendi.</p>
+            <div class="row">
+                <div class="col d-flex align-items-center">
+                    <img class="w-25" src="images/facebook.svg" alt="facebook">
+                    <p class="mb-0 ms-2">@Taufiq sa</p>
+                </div mb-0 ms-2>
+                <div class="col d-flex align-items-center">
+                    <img class="w-25" src="images/instagram.svg" alt="instagram">
+                    <p class="mb-0 ms-2">@Taufiq sa</p>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <img class="w-25" src="images/twitter.svg" alt="twiter">
+                    <p class="mb-0 ms-2">@Taufiq sa</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5">
+            <form class="contact-form" onsubmit="onFormSubmit(event)">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Your Subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <input type="text" class="form-control" id="message" placeholder="Your Message" required>
+                </div>
+                <button type="submit" class="btn buton">Submit</button>
+              </form>
+        </div>
+    </div>
+</section>
 
 <!-- jquery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
